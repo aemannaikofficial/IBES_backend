@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+node_modules/
+
+# Environment variables
+.env
+
+# Uploads directory - ignore actual uploads but keep the directory via .gitkeep
+/uploads/*
+!/uploads/.gitkeep
+
+# Editor files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.bak
