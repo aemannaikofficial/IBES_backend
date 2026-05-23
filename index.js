@@ -615,10 +615,8 @@ app.post('/api/auth/login', async (req, res) => {
   }
 });
 
-if (process.env.NODE_ENV !== 'production' && !process.env.VERCEL) {
-  app.listen(PORT, () => {
-    console.log(`[SERVER] IBES Notification Service running on http://localhost:${PORT}`);
-  });
-}
+app.listen(PORT, () => {
+  console.log(`[SERVER] IBES Notification Service running on http://localhost:${PORT}`);
+});
 
 export default app;
